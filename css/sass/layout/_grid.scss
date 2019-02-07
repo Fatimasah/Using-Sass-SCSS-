@@ -1,0 +1,46 @@
+/* start grid style */
+*{
+    @include prefixer (box-sizing, border-box, webkit moz o);    
+    
+}
+.container {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    @media #{$minSmall} {
+        width: 750px;
+    }
+    @media #{$minMedium} {
+        width: 970px;
+    }
+    @media #{$minLarge} {
+        width: 1170px;
+    }
+}
+.unstyled-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.unstyled-link {
+    text-decoration: none;
+}
+.txt-upperCase {
+    text-transform: uppercase;
+}
+.txt-lowerCase{
+    text-transform: lowercase;
+}
+.clear-fix{
+    clear: both;
+}
+.text-center-xs{
+    @media #{$maxMobile} {
+        text-align: center !important ;
+    }
+
+}
+
+/* end grid style */
+

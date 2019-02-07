@@ -1,0 +1,137 @@
+/* start footer */
+.footer{
+    background-color: $thirdColor;
+    overflow-x: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    .section-title{
+        color: $secondColor;
+        font-weight: normal;
+    }
+    .footer-img, .info, .contact {
+        float: $float-l;
+    }
+    .footer-img{
+        width: 50%;
+        @media #{$medium} {
+            width: 100%;
+            padding: 0 15px;
+        }
+        @media #{$mobile} {
+            width: 100%;
+            padding: 0 15px;
+        }
+        .img-box{
+            overflow: hidden;
+            margin-bottom: 30px;
+            img{
+                @media #{$minSmall} {
+                    float: $float-l;
+                }
+                width: 150px;
+                height: 150px;
+            }
+            .text{
+                @media #{$minSmall} {
+                    float: $float-l;
+                    margin-right: 15px;
+                    margin-left: 15px;
+                    width: calc(100% - 180px);
+                }                
+                
+                
+                h4{
+                    color: $mainColor;
+                    margin: 10px 0 0px;
+                    @media #{$medium} {
+                        margin-top: 0;
+                    }
+                }
+                p{
+                    color: $secondColor;
+                    line-height: 1.6;
+
+                }
+
+            }
+        }
+    }
+    .info{
+        width: 25%;
+        @media #{$medium} {
+            width: 40%;
+            padding: 0 15px;
+        }
+        @media #{$mobile} {
+            width: 100%;
+            padding: 0 15px;
+        }
+        ul{
+            color: $secondColor;
+            line-height: 1.9;
+            li{
+                span{
+                    color: $mainColor;
+                    font-weight: bold;
+                }
+            }
+        }
+        h4{
+            color: $secondColor;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        p{
+            color: $secondColor;
+            margin-top: 8px;
+        }
+
+    }
+    .contact{
+        width: 25%;
+        @media #{$medium} {
+            width: 60%;
+            padding: 0 15px;
+        }
+        @media #{$mobile} {
+            width: 100%;
+            padding: 0 15px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea{
+            border: 1px solid $secondColor;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        textarea{
+            height: 140px;
+            resize: none;
+        }
+    }
+    .copyright{
+        overflow: hidden;
+        border-top: 1px solid $mainColor;
+        padding: 25px 0;
+        color: $secondColor;
+        margin-top: 40px;
+        .text,
+        .author{
+            
+            float: $float-l;
+            width: 50%;
+            @media #{$mobile} {
+                width: 100%;
+                float: none;
+                margin-bottom: 10px;
+            }
+        }
+        .author{
+            text-align: $text-r;
+        }
+    }
+}
+/* end footer */

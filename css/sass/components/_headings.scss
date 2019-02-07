@@ -1,0 +1,27 @@
+// for heading components
+
+    .head-with-border{
+        position: relative;
+        h2{
+            text-align: center;
+            background-color: $mainColor;
+            margin: 40px auto;
+            border-radius: 15px;
+            width: fit-content;
+            padding: 10px 5%;
+            color: #fff;
+            @media #{$maxMobile} {
+                font-size: 20px;
+            }
+            &:before{
+                content: '';
+                width: 100%;
+                height: 2px;
+                background-color: $thirdColor;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                z-index: -1;
+            }
+        }
+    }

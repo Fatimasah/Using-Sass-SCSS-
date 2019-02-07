@@ -1,0 +1,63 @@
+.header{
+    padding: 20px 0;
+    overflow: hidden;
+    border-bottom: 1px solid $secondColor;
+    position: relative;
+    .logo{
+        width: 30%;
+        float: $float-l;
+        color: $secondColor;
+        @media #{$mobile}{
+            width: 100%;
+        }
+        @media #{$medium} {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+    }
+    h1{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .navbar{
+        width: 70%;
+        float: $float-l;
+        background-color: $mainColor;
+        border-radius: 15px;
+        @media #{$minSmall} {
+            display: block !important;
+        }
+        @media #{$mobile}{
+            display: none;
+            border-radius: 0;
+            width: 100%;
+        }
+        @media #{$medium} {
+            width: 100%;
+            margin-top: 30px;   
+        }
+        li{
+            width: 20%;
+            float: $float-l;
+            font-size: 18px;
+            text-align: center;
+            @media #{$mobile}{
+                display: block;
+                float: none;
+                width: 100%;
+                text-align: $text-l;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            a{
+                color: #fff;
+                display: block;
+                padding: 20px 10px;
+                &:hover{
+                    color:#ddd;
+                }
+            }
+        }
+    }
+}
